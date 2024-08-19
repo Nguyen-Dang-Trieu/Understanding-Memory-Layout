@@ -94,7 +94,7 @@ int main() {
     return 0;
 }
 ~~~
-👉 *Corresponding assembly code*
+👉 *Corresponding assembly code (Optimization: -O0)*
 ~~~assembly
 add:
         push    {r7}
