@@ -1,10 +1,10 @@
 # Understanding Memory Layout
-## Reference: 
+## 🌐 Reference: 
 - https://www.linkedin.com/pulse/understanding-memory-layout-stack-heap-bss-data-text-segments-shah/
 - https://computationstructures.org/lectures/stacks/stacks.html
 - https://shatteredsilicon.co.uk/2021/01/22/microcontroller-memory-layout/
 
-## Table of Contents
+## 📚 Table of Contents
 - [Microcontroller memory layout](#microcontroller-memory-layout)
   - [RAM memory](#ram-memory)
     - [Variables fall into several categories](#variables-fall-into-several-categories)
@@ -16,14 +16,14 @@
 
   
 ## Microcontroller memory layout
-First we have different types of memory `Flash (Non-volatile)` and `Ram (Volatile)`.
+😎 First we have different types of memory `Flash (Non-volatile)` and `Ram (Volatile)`.😎
 
-Lets start with a picture of our memory.
+**Let's start with a 😲 picture of our memory.**
 <p align="center">
     <img src="./Images/microcontroller_1.png" width="500px" alt="">
 </p>
 
-### RAM memory
+### 🎯 RAM memory
 #### Variables fall into several categories
 - Global Variables Uninitialised and Zero Initialised.
 - Global variables Initialised.
@@ -70,9 +70,10 @@ void myFunc(){
 ~~~
 
 #### Local Variables (STACK) 
-The [Stack](https://www.notion.so/How-does-the-Subroutine-work-f9d1448b9d9646bfb724801b865feb8b) segment is responsible for **managing function calls, local variables, and related data**. It operates using a Last-In-First-Out (LIFO) mechanism, where the most recently called function occupies the top of the stack. The stack is used to store function parameters, return addresses, and local variables. It automatically grows and shrinks as functions are called and return.
+The 🔍[Stack](https://www.notion.so/How-does-the-Subroutine-work-f9d1448b9d9646bfb724801b865feb8b) segment is responsible for **managing function calls, local variables, and related data**. It operates using a Last-In-First-Out (LIFO) mechanism, where the most recently called function occupies the top of the stack. The stack is used to store function parameters, return addresses, and local variables. It automatically grows and shrinks as functions are called and return.
 
 **Below is a sample code demonstrating the use of the `STACK` in an `ARM` microcontroller program:**
+🔍[Introduciton to the ARM architecture](https://kmittal82.wordpress.com/2012/06/13/intro-to-the-arm-architecture/)
 ~~~c
 #include <stdio.h>
 
@@ -93,7 +94,7 @@ int main() {
     return 0;
 }
 ~~~
-*Corresponding assembly code*
+👉 *Corresponding assembly code*
 ~~~assembly
 add:
         push    {r7}
@@ -140,4 +141,4 @@ main:
 #### HEAP
 The heap segment is the area of memory used for dynamic memory allocation. It allows programs to request memory dynamically during `runtime` using functions like `malloc()`, `calloc()`, `realloc()` and `free()`. Unlike the stack, the heap memory must be explicitly managed by the programmer. It provides flexibility in allocating and deallocating memory as needed.
 
-### FLASH memory
+### 🎯 FLASH memory
