@@ -6,18 +6,14 @@
 
 ## Table of Contents
 - [Microcontroller memory layout](#microcontroller-memory-layout)
-  - [Overview](#overview)
-  - [Goals](#goals)
-- [Installation](#installation)
-  - [Prerequisites](#prerequisites)
-  - [Steps](#steps)
-- [Usage](#usage)
-  - [Basic Usage](#basic-usage)
-  - [Advanced Usage](#advanced-usage)
-    - [Configuration](#configuration)
-    - [Customization](#customization)
-- [Contributing](#contributing)
-- [License](#license)
+  - [RAM memory](#ram-memory)
+    - [Variables fall into several categories](#variables-fall-into-several-categories)
+    - [Global Variables Uninitialised and Zero Initialised](#global-variables-uninitialised-and-zero-initialised)
+    - [Global variables Initialised](#global-variables-initialised)
+    - [Local Variables (STACK)](#local-variables-stack)
+    - [HEAP](#heap)
+  - [FLASH memory](#flash-memory)
+
   
 ## Microcontroller memory layout
 First we have different types of memory `Flash (Non-volatile)` and `Ram (Volatile)`.
